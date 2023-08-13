@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,300;10..48,700&display=swap');
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+  font-family: 'Bricolage Grotesque', sans-serif;
+
+}
+
+.block{
+  display: block;
+  margin:0 auto;
+}
+.container{
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  transition: width 2s, height 4s;
+}
+
+.container {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  width: 500px;
+  transition: 1s linear;
+}
+
+.form {
+  text-align: center;
+}
+
+.step {
+  display: none;
+}
+
+.step.active {
+  display: block;
+}
+
+h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 8px 24px;
+  margin: 5px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: 'Bricolage Grotesque', sans-serif;
+}
+
+.next-btn {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.prev-btn {
+  background-color: #ccc;
+}
+
+.colorful-btn {
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+  color: white;
+  font-weight: bold;
+}
+
+
+/* Background */
+
+body {
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+}
+
+h2 {
+  color: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);;
+  background-size: 900% 900%;
+ } 
+
+.pink{
+  color: palevioletred;
+  background-size: 900% 900%;
+  animation: gradient 15s ease infinite;
+}
+.bg-pink{
+  background-color: palevioletred;
+  background-size: 900% 900%;
+  animation: gradient 15s ease infinite;
+}
+
+
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+
+
+/* Style for step1 */
+
+.logo-container {
+  text-align: center;
+}
+
+.logo-container img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+#show-records, #add-player {
+  display:block;
+  margin:10px auto;
+  
+}
+
+
+
+
+
+/* For 2nd step input */
+
+.modal {
+  display: none;
+  top: 0;
+  left: 0;
+  width: 60%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  margin:0 auto;
+  margin-bottom: 10px;
+}
+
+.modal button{
+  display: block;
+  margin:5px auto;
+  background-color: #ccc;
+  padding: 2px 20px;
+}
+
+.modal-content {
+  background-color: #f0f0f0;
+  padding: 0px 0px;
+  border-radius: 20px;
+  text-align: center;
+  position: relative;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+input {
+  padding: 5px 20px;
+  border: none;
+  text-align: center;
+  border-radius: 20px; 
+  box-shadow: 0 2 10px rgba(0, 0, 0, 0.1); 
+  outline: none;
+}
+
+input:focus {
+  box-shadow: 0 2 10px rgba(0, 0, 0, 0.2); 
+}
+
+
+/* For adding player */
+
+#player-form {
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="date"],
+select,
+input[type="checkbox"] {
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  padding:2px 20px;
+}
+
+select {
+  height: 25px;
+}
+
+input[type="checkbox"] {
+  width: auto;
+  margin-top: 5px;
+}
+
+input[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+
+
+.playgame:hover{
+  color:#007bff;
+  transition: .1s linear;
+  cursor: pointer; 
+}
+
+
+.bottom{margin-top:30px;}
