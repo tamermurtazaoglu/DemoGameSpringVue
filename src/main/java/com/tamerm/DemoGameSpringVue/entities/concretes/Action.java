@@ -1,5 +1,6 @@
 package com.tamerm.DemoGameSpringVue.entities.concretes;
 
+import com.tamerm.DemoGameSpringVue.entities.abstracts.IEntity;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -8,10 +9,9 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-@Table(name = "game")
+@Table(name = "action")
 @Entity
-public class Game {
-
+public class Action {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
@@ -23,7 +23,6 @@ public class Game {
     @Column(name = "description")
     private String description;
 
-    @Column(name = "logo")
-    private String logo;
-
+    @Column(name = "point")
+    private int point;
 }
