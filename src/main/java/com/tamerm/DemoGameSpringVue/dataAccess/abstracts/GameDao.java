@@ -9,13 +9,13 @@ import org.springframework.data.jpa.repository.Query;
 public interface GameDao extends JpaRepository<Game, Integer> {
     Game findFirst();
 
-    @Transactional
-    @Modifying
-    @Query("update Game g" +
-            "set g.name= ?1 and " +
-            "g.description = ?2 and " +
-            "g.logo = ?3 and" +
-            "where g.id = ?4")
-    int updateGame(String name, String description, String logo, Integer id);
-
+    // That is not necessary for now:
+//    @Transactional
+//    @Modifying
+//    @Query("update Game g" +
+//            "set g.name= ?1 and " +
+//            "g.description = ?2 and " +
+//            "g.logo = ?3 and" +
+//            "where g.id = ?4")
+//    int updateGame(String name, String description, String logo, Integer id);
 }

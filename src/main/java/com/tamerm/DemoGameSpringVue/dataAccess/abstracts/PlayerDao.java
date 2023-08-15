@@ -25,4 +25,11 @@ public interface PlayerDao extends JpaRepository<Player, Integer> {
             "p.birthcity = ?5 " +
             "where p.id = ?6")
     int updatePlayer(String name, String surname, String gender, Date birthdate, String birthcity, Integer id);
+
+    @Transactional
+    @Modifying
+    @Query("update Player p" +
+            "set p.point= p.point + ?1 " +
+            "where p.id = ?2")
+    boolean gainPoint(Integer point, Integer player_id);
 }

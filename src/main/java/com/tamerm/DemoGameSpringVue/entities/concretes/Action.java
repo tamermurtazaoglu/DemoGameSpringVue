@@ -1,6 +1,5 @@
 package com.tamerm.DemoGameSpringVue.entities.concretes;
 
-import com.tamerm.DemoGameSpringVue.entities.abstracts.IEntity;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
