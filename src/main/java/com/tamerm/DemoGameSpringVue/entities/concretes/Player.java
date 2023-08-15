@@ -30,7 +30,7 @@ public class Player {
     private String birthCity;
 
     @Column(name = "is_active")
-    private boolean isActive;
+    private boolean isActive = true;
 
     @Column(name = "score")
     private int score;
