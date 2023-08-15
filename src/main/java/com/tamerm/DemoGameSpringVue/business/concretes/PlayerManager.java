@@ -37,4 +37,11 @@ public class PlayerManager implements PlayerService {
         playerDao.gainPoint(action.getPoint(), player.getId());
         return true;
     }
+
+    @Override
+    public boolean deleteById(Integer id) {
+        playerDao.deleteById(id);
+        return true;
+    }
+
 }

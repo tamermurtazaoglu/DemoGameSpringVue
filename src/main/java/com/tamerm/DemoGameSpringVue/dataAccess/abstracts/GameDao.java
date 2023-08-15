@@ -1,13 +1,12 @@
 package com.tamerm.DemoGameSpringVue.dataAccess.abstracts;
 
 import com.tamerm.DemoGameSpringVue.entities.concretes.Game;
-import jakarta.transaction.Transactional;
 import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.data.jpa.repository.Modifying;
-import org.springframework.data.jpa.repository.Query;
+
+import java.util.Optional;
 
 public interface GameDao extends JpaRepository<Game, Integer> {
-    Game findFirst();
+    Optional<Game> findById(Integer id);
 
     // That is not necessary for now:
 //    @Transactional

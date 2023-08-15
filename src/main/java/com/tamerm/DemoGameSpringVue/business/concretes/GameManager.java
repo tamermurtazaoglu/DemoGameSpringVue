@@ -4,6 +4,8 @@ import com.tamerm.DemoGameSpringVue.business.abstracts.GameService;
 import com.tamerm.DemoGameSpringVue.dataAccess.abstracts.GameDao;
 import com.tamerm.DemoGameSpringVue.entities.concretes.Game;
 
+import java.util.Optional;
+
 public class GameManager implements GameService {
     GameDao gameDao;
 
@@ -12,8 +14,8 @@ public class GameManager implements GameService {
     }
 
     @Override
-    public Game getGameInfo() {
-        return gameDao.findFirst();
+    public Optional<Game> getGameInfo(Integer id) {
+        return gameDao.findById(id);
     }
 
 }

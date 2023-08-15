@@ -32,4 +32,5 @@ public interface PlayerDao extends JpaRepository<Player, Integer> {
             "set p.point= p.point + ?1 " +
             "where p.id = ?2")
     boolean gainPoint(Integer point, Integer player_id);
+
 }

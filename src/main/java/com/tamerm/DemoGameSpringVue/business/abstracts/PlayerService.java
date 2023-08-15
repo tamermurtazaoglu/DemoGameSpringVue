@@ -15,4 +15,6 @@ public interface PlayerService {
     boolean updatePlayer(String name, String surname, String gender, Date birthdate, String birthcity, Player player);
 
     boolean gainPoint(Action action, Player player);
+
+    boolean deleteById(Integer id);
 }
