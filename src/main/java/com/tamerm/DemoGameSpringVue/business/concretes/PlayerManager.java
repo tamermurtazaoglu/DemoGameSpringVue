@@ -4,11 +4,13 @@ import com.tamerm.DemoGameSpringVue.business.abstracts.PlayerService;
 import com.tamerm.DemoGameSpringVue.dataAccess.abstracts.PlayerDao;
 import com.tamerm.DemoGameSpringVue.entities.concretes.Action;
 import com.tamerm.DemoGameSpringVue.entities.concretes.Player;
+import org.springframework.stereotype.Service;
 
 import java.util.Date;
 import java.util.List;
 import java.util.Optional;
 
+@Service
 public class PlayerManager implements PlayerService {
     PlayerDao playerDao;
 

@@ -17,15 +17,15 @@
       <div id="players">
         <div class="player">
           <p>Player1
-            &nbsp;<i class="fa-solid fa-trash"></i> 
-            &nbsp;<i class="fa-solid fa-pen-to-square"></i>
+            &nbsp;<i class="fa-solid fa-trash delete"></i> 
+            &nbsp;<i class="fa-solid fa-pen-to-square "></i>
             &nbsp;<i class="fa-solid fa-gamepad pink playgame next"></i> 
 
           </p>
         </div>
         <div class="player">
           <p>Player2
-            &nbsp;<i class="fa-solid fa-trash"></i> 
+            &nbsp;<i class="fa-solid fa-trash delete"></i> 
             &nbsp;<i class="fa-solid fa-pen-to-square"></i>
             &nbsp;<i class="fa-solid fa-gamepad pink playgame next"></i> 
           </p>
@@ -62,7 +62,7 @@
 
               </form>
 
-              <button class="next-btn next colorful-btn" id="add-and-play-btn">Add and play</button>
+              <button class="next-btn colorful-btn" id="add-and-play-btn">Add and play</button>
 
 
 

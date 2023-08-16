@@ -4,6 +4,7 @@ import com.tamerm.DemoGameSpringVue.business.abstracts.GameService;
 import com.tamerm.DemoGameSpringVue.entities.concretes.Game;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -21,7 +22,7 @@ public class GameController {
     }
 
     @GetMapping("/get-info")
-    public Optional<Game> getGameInfo(Integer id){
+    public Optional<Game> getGameInfo(@RequestBody Integer id){
         return this.gameService.getGameInfo(id);
     }
 

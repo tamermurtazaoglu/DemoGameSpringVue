@@ -4,9 +4,11 @@ import com.tamerm.DemoGameSpringVue.business.abstracts.PlayerService;
 import com.tamerm.DemoGameSpringVue.entities.concretes.Player;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.List;
 import java.util.Optional;
 
 @RestController
@@ -21,8 +23,13 @@ public class PlayerController {
     }
 
     @GetMapping("/get-info")
-    public Optional<Player> findById(Integer id){
+    public Optional<Player> findById(@RequestBody Integer id){
         return this.playerService.findById(id);
+    }
+
+    @GetMapping("/get-all")
+    public List<Player> getAll(){
+        return this.playerService.getAll();
     }
 
 }

@@ -66,6 +66,7 @@ $(document).ready(function() {
     });
 
     $("#add-player").click(function() {
+
         $("#modal").show();
         $("#modal").removeClass("animate__animated animate__fadeIn");
         $("#modal").addClass("animate__animated animate__fadeIn");
@@ -82,6 +83,16 @@ $(document).ready(function() {
       ).mouseout(function() { 
         $(this).removeClass('animate__animated animate__pulse');
     })
+
+    $("#add-and-play-btn").click(function (e) { 
+        if( !$("#name").val() || !$("#surname").val() || !$("#birthdate").val() ) {
+            alert('Please fill all fields.');    
+        }else{
+            currentStep++;
+            updateStep();
+        }
+        
+    });
       
     let score = 0;
     const scoreSpan = $("#score");
@@ -104,5 +115,8 @@ $(document).ready(function() {
         //
     });
 
-      
+    $(".delete").click(function (e) { 
+        // next time, this function will be dynamic
+        alert("Deleted succesfully!");
+    });
 });
